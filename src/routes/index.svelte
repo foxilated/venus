@@ -37,4 +37,7 @@
     color: var(--white);
     font-weight: 300;
   }
+
+  @media all and (max-width: 1100px) {
+  }
 </style>
