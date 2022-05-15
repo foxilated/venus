@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+:root {
+  font-family: Poppins, sans-serif;
+  --white: #ffffff;
+  --black: #111115;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  /* This Makes 1rem = 10px */
+  font-size: 62.5%;
+
+  scroll-behavior: smooth;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 1.5vmin;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
+@supports (scrollbar-color: var(--blue) white) {
+  * {
+    scrollbar-color: var(--black) white;
+    scrollbar-width: thin;
+  }
+}
